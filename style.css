@@ -8,22 +8,28 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #000000;
+  background: #161616;
   color: #fff;
 }
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(img/portifolioimg.jpg);
-  background-size: 30cqmax;
+  background-image: url(img/bg.png);
 
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
 }
 .container {
   padding: 10px;
   margin-right: 100px;
 }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 ul {
   display: flex;
   align-items: center;
@@ -56,7 +62,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 div .header-text {
-  margin-left: 20%;
+  margin-left: 10%;
   margin-top: 20%;
 }
 .header-text {
@@ -64,20 +70,30 @@ div .header-text {
   right: 10%;
   text-align: left;
 }
+.header-text p {
+  font-weight: bolder;
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 
 .header-text h1 {
   display: flex;
   font-size: 30px;
   margin-top: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .header-text h1 span {
   color: #ff004f;
   margin-left: 1%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 .sub-title2 {
   margin-top: 30px;
-  color: #b54769;
+  color: #ff004f;
   font-weight: 300;
   font-style: italic;
   margin-right: 0%;
@@ -96,10 +112,13 @@ div .header-text {
 }
 .about-col-1 {
   flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-col-1 img {
-  width: 40%;
-  border-radius: 100px;
+  width: 75%;
+  border-radius: 50%;
 }
 .about-col-2 {
   flex-basis: 50%;
@@ -151,14 +170,17 @@ div .header-text {
   display: block;
 }
 /*-----------------------------*/
-#Service1 {
-  padding: 30px 0;
+
+#Service {
+  padding: 30px;
 }
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+  justify-content: center;
+  align-items: center;
 }
 .services-list div {
   background: #262626;
@@ -195,7 +217,7 @@ div .header-text {
 }
 /*---------------------------------------------------*/
 #Portfolio {
-  padding: 30px 0;
+  padding: 30px;
 }
 .work-list {
   display: grid;
@@ -207,9 +229,12 @@ div .header-text {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  height: 50vh;
 }
 .work img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
   display: block;
   transition: transform 0.5s;
@@ -269,6 +294,12 @@ div .header-text {
   background: #ff004f;
 }
 /* ------------contact------------*/
+#Contact {
+  padding: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact-left {
   flex-basis: 35%;
 }
@@ -342,11 +373,17 @@ nav .fa-solid {
 }
 @media only screen and (max-width: 600px) {
   #header {
+<<<<<<< HEAD
     background-image: url(img/portifolioimg.jpg);
     background-size: 20cqmax;
 
     background-repeat: no-repeat;
     background-position: 20cap;
+=======
+    background-image: url(img/bg.png)
+    background-repeat: no-repeat;
+
+>>>>>>> 29bf92509e41f5484e1244c9d68b4d01d53e2ab8
   }
   .header-text {
     font-size: 16px;
