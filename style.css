@@ -343,17 +343,17 @@ nav .fa-solid {
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(img/portifolioimg.jpg);
-    background-size: 40cqmax;
+    background-size: 20cqmax;
+
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 20cap;
   }
   .header-text {
-    margin-top: 100px;
     font-size: 16px;
   }
 
   div .header-text {
-    margin-top: 40%;
+    align-content: center;
   }
   nav .fa-solid {
     display: block;
@@ -369,13 +369,12 @@ nav .fa-solid {
     padding-top: 50px;
   }
   nav ul li {
-    display: block;
-    margin: 50px;
+    margin: 40px;
   }
+
   nav ul.fa-solid {
     position: absolute;
-    top: 50px;
-    left: 25px;
+
     cursor: pointer;
   }
 
