@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #161616;
+  background: #000000;
   color: #fff;
 }
 #header {
@@ -20,30 +20,23 @@ body {
   background-position: center;
 }
 .container {
-  padding: 10px;
-  margin-right: 100px;
+  padding: 10px 10%;
 }
 
 nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  float: left;
-}
 nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
 }
 nav ul li a {
-  color: #fff;
+  color: #e4aaaa;
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -61,42 +54,23 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-div .header-text {
-  margin-left: 10%;
-  margin-top: 20%;
-}
 .header-text {
-  margin: 80% 0 40%;
-  right: 10%;
-  text-align: left;
+  margin-top: 10%;
+  font-size: 20px;
+  justify-content: center;
 }
-.header-text p {
-  font-weight: bolder;
-  font-style: italic;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
 .header-text h1 {
-  display: flex;
-  font-size: 30px;
-  margin-top: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
 }
 
 .header-text h1 span {
   color: #ff004f;
-  margin-left: 1%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
 }
 .sub-title2 {
-  margin-top: 30px;
-  color: #ff004f;
-  font-weight: 300;
+  color: #cd4d6b;
   font-style: italic;
-  margin-right: 0%;
+  margin: 50px 0 30px;
 }
 /*-----------------about-------------------*/
 
@@ -172,7 +146,7 @@ div .header-text {
 /*-----------------------------*/
 
 #Service {
-  padding: 30px;
+  padding: 30px 0;
 }
 .services-list {
   display: grid;
@@ -217,7 +191,7 @@ div .header-text {
 }
 /*---------------------------------------------------*/
 #Portfolio {
-  padding: 30px;
+  padding: 50px 0;
 }
 .work-list {
   display: grid;
@@ -294,17 +268,12 @@ div .header-text {
   background: #ff004f;
 }
 /* ------------contact------------*/
-#Contact {
-  padding: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .contact-left {
   flex-basis: 35%;
 }
 .contact-right {
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 
 .contact-left p {
@@ -373,45 +342,42 @@ nav .fa-solid {
 }
 @media only screen and (max-width: 600px) {
   #header {
-<<<<<<< HEAD
-    background-image: url(img/portifolioimg.jpg);
-    background-size: 20cqmax;
-
+    background-image: url(img/bg.png);
     background-repeat: no-repeat;
-    background-position: 20cap;
-=======
-    background-image: url(img/bg.png)
-    background-repeat: no-repeat;
-
->>>>>>> 29bf92509e41f5484e1244c9d68b4d01d53e2ab8
   }
   .header-text {
+    margin-top: 100%;
     font-size: 16px;
   }
 
-  div .header-text {
-    align-content: center;
+  .header-text h1 {
+    font-size: 30px;
   }
+
   nav .fa-solid {
     display: block;
-    font-size: 40px;
+    font-size: 28px;
   }
   nav ul {
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: -200px;
-    width: 200px;
+    right: -150px;
+    width: 150px;
     height: 100vh;
     padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
   }
   nav ul li {
-    margin: 40px;
+    display: block;
+    margin: 25px;
   }
 
-  nav ul.fa-solid {
+  nav ul .fa-solid {
     position: absolute;
-
+    top: 25px;
+    left: 25px;
     cursor: pointer;
   }
 
@@ -439,4 +405,9 @@ nav .fa-solid {
   .copyright {
     font-size: 14px;
   }
+}
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
 }
